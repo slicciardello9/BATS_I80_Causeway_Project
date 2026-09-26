@@ -1,0 +1,9 @@
+# coords.csv
+Coordinates directly surrounding the 1-80 Causeway
+The three pixels directly North and South of the midline of the causeway
+Coordinates selected used Google Earth Pro
+C=Center, W=West, E=East
+
+# sunset_times.csv
+Sunset times from 2013 to 2025
+Generated using https://gml.noaa.gov/grad/solcalc/calcdetails.html
