@@ -1,0 +1,23 @@
+# BATS_doppler_run_template.sbatch
+Template for running BATS in HPC
+Currently has variables allowing it to be template for running BATS_wrapper.sh or BATS_input.sh
+
+# BATS_wrapper.sh
+Allows you to input batch of dates into BATS
+Uses a dependency so the next date can only run once the one before it has finished running
+If a date fails, the rest of the dates cannot run
+Input of dates, output of classified files
+
+#BATS_input.sh
+Also allows you to input batch of dates into BATS
+Doesn't use a dependency, so sometimes files run at the same time and become a single classified file
+
+#geotif_crop.sh
+Template for running outputted classified files from BATS and generates tsv files
+Currently has variables allowing it to be template for running crop_input.sh
+Additionally crops to 500m surrounding causeway
+
+#crop_input.sh
+Allows you to run batch of dates
+Requires BATS to have been fully run before using
+Input of classified files, output of tsv files
