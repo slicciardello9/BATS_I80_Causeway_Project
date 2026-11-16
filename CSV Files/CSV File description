@@ -7,3 +7,9 @@ C=Center, W=West, E=East
 # sunset_times.csv
 Sunset times from 2013 to 2025
 Generated using https://gml.noaa.gov/grad/solcalc/calcdetails.html
+
+#MOE_times
+Moment of emergence times for June and August of 2013 and 2019-2023
+Blank dates means that the video was unable to be downloaded or no clear MOE was present
+CSV files generated from Excel file
+Must be in csv format to work with Load and Create Dataframes.R
